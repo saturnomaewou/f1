@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Evolução dos Motores</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      min-height: 100%;
+    }
+    body {
+      background-color: #4B0000;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+    }
+    .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .category {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+    .category .text {
+      flex: 1;
+      min-width: 300px;
+      line-height: 1.6;
+    }
+    .category .text h2 {
+      margin-bottom: 0.8rem;
+      font-size: 1.8rem;
+      text-shadow: 1px 1px 3px #ffffff;
+    }
+    .category .text p {
+      margin-bottom: 1rem;
+    }
+    .category .image {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .category .image img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      filter: drop-shadow(0 0 10px #ffffff);
+      border-radius: 4px;
+    }
+    .btn-container {
+      margin-top: 2rem;
+      text-align: left;
+    }
+    .btn-container button {
+      padding: 0.6rem 1.2rem;
+      background: transparent;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-container button:hover {
+      background: #ffffff;
+      color: #4B0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <section class="category">
+      <div class="text">
+        <h2>Máquinas a Vapor (Século XVIII)</h2>
+        <p>
+          As primeiras máquinas a vapor revolucionaram a indústria e o transporte. Concebidas por Thomas Newcomen e aprimoradas por James Watt, usavam caldeiras para gerar pressão de vapor que movia pistões.
+        </p>
+        <p>
+          Eram volumosas e ineficientes, mas serviram de base para todas as evoluções mecânicas seguintes, levando à mecanização de fábricas, locomotivas e navios a vapor.
+        </p>
+      </div>
+      <div class="image">
+        <img src="vapor.jpg" alt="Antiga máquina a vapor" />
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="text">
+        <h2>Motores de Combustão Interna (Final do Século XIX)</h2>
+        <p>
+          Com o Otto de ciclo quatro tempos (1876) e o motor de dois tempos de Dugald Clerk, surgiu a era do motor a gasolina. Compactos e mais poderosos que o vapor, impulsionaram o automóvel.
+        </p>
+        <p>
+          Carburadores e ignição por vela foram as chaves iniciais. A prática exigiu combustíveis refinados e sistemas de lubrificação mais precisos para suportar rotações cada vez mais altas.
+        </p>
+      </div>
+      <div class="image">
+        <img src="motorint.jpg" alt="Motor de combustão interna" />
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="text">
+        <h2>Motores Diesel (Início do Século XX)</h2>
+        <p>
+          Rudolf Diesel desenvolveu seu motor em 1893, usando alta compressão em ciclo de quatro tempos e sem vela de ignição. Isso trouxe maior eficiência térmica e torque.
+        </p>
+        <p>
+          Tornaram-se padrão em caminhões, navios e geradores, graças ao consumo reduzido e à durabilidade. A injeção direta e a turbocompressão moderna elevaram ainda mais seu desempenho.
+        </p>
+      </div>
+      <div class="image">
+        <img src="diesel.jpg" alt="Motor diesel moderno" />
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="text">
+        <h2>Motores Turbo e Superalimentados (Décadas de 1960–1980)</h2>
+        <p>
+          Para extrair mais potência de motores pequenos, adotou-se o turbocompressor, que reaproveita gases de escape, e o supercharger, movido mecanicamente.
+        </p>
+        <p>
+          Esses sistemas elevaram a densidade do ar admitido e permitiram ganhos expressivos de potência e torque em motores de passeio e competição.
+        </p>
+      </div>
+      <div class="image">
+        <img src="turbo.jpg" alt="Sistema turbo em motor" />
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="text">
+        <h2>Motores Elétricos e Híbridos (Século XXI)</h2>
+        <p>
+          A eletrificação traz motores elétricos com torque instantâneo e alta eficiência. Veículos híbridos combinam motor a combustão e elétrico para reduzir emissões e consumir menos combustível.
+        </p>
+        <p>
+          Baterias de íon-lítio, inversores e sistemas de gerenciamento térmico continuam evoluindo, tornando a mobilidade elétrica cada vez mais acessível e sustentável.
+        </p>
+      </div>
+      <div class="image">
+        <img src="eletrico.jpg" alt="Motor elétrico moderno" />
+      </div>
+    </section>
+
+    <div class="btn-container">
+      <button onclick="window.location.href='index.html'">Voltar</button>
+    </div>
+
+  </div>
+</body>
+</html>

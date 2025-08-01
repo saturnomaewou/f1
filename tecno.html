@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tecnologia Automobilística</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      min-height: 100%;
+    }
+    body {
+      background-color: #4B0000;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+    }
+    .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .category {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+    .category .text {
+      flex: 1;
+      min-width: 300px;
+      line-height: 1.6;
+    }
+    .category .text h2 {
+      margin-bottom: 0.8rem;
+      font-size: 1.8rem;
+      text-shadow: 1px 1px 3px #ffffff;
+    }
+    .category .text p {
+      margin-bottom: 1rem;
+    }
+    .category .image {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .category .image img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      filter: drop-shadow(0 0 10px #ffffff);
+      border-radius: 4px;
+    }
+    .btn-container {
+      margin-top: 2rem;
+      text-align: left;
+    }
+    .btn-container button {
+      padding: 0.6rem 1.2rem;
+      background: transparent;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-container button:hover {
+      background: #ffffff;
+      color: #4B0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <section class="category">
+      <div class="text">
+        <h2>Primeiras Inovações (Final do Séc. XIX – Início do Séc. XX)</h2>
+        <p>
+          Karl Benz e os irmãos Duryea criaram os primeiros automóveis movidos a motor de combustão interna. Eram peças artesanais, com freios rudimentares e volante de madeira.
+        </p>
+        <p>
+          A ignição por manguito e os carburadores primitivos limitavam potência e confiabilidade, mas abriram caminho para a indústria nas décadas seguintes.
+        </p>
+      </div>
+      <div class="image">
+        <img src="primeiro.jpg" alt="Carro antigo de início do século XX" />
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="text">
+        <h2>Produção em Massa e Avanços Mecânicos (1920–1950)</h2>
+        <p>
+          Henry Ford popularizou a linha de montagem, reduzindo custos e tempo de fabricação. Componentes padronizados e intercambiáveis viraram padrão.
+        </p>
+        <p>
+          Freios hidráulicos substituíram os mecânicos, suspensões independentes aprimoraram o conforto, e carburadores ganharam regulagem mais precisa.
+        </p>
+      </div>
+      <div class="image">
+        <img src="ford.png" alt="Linha de montagem Ford" />
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="text">
+        <h2>Segurança e Conforto (1950–1980)</h2>
+        <p>
+          Cintos de três pontos de segurança tornaram-se obrigatórios e bolsas de ar (airbags) começaram a ser testadas nos Estados Unidos.
+        </p>
+        <p>
+          Direção hidráulica, ar-condicionado e sistemas de suspensão ajustáveis elevaram o nível de conforto dos ocupantes.
+        </p>
+      </div>
+      <div class="image">
+        <img src="airbag.jpg" alt="Interior de carro com airbag aberto" />
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="text">
+        <h2>Eletrônica e Injeção Eletrônica (1980–2000)</h2>
+        <p>
+          Eletrônicos embarcados como módulo de comando (ECU) passaram a controlar injeção de combustível, ignição e emissões, substituindo carburadores.
+        </p>
+        <p>
+          Sistemas ABS e controle de tração melhoraram a dirigibilidade, enquanto o diagnóstico de bordo (OBD) permitiu monitoramento e manutenção mais precisos.
+        </p>
+      </div>
+      <div class="image">
+        <img src="injecao.jpg" alt="Placa eletrônica de injeção automotiva" />
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="text">
+        <h2>Conectividade e Assistência (2000–2020)</h2>
+        <p>
+          GPS integrado, conectividade Bluetooth e telas touchscreen tornaram-se itens de série, transformando o cockpit em centro multimídia.
+        </p>
+        <p>
+          Sistemas ADAS como frenagem automática de emergência, alerta de ponto cego e manutenção de faixa começaram a salvar vidas e evitar colisões.
+        </p>
+      </div>
+      <div class="image">
+        <img src="adas.png" alt="Painel exibindo sistema ADAS" />
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="text">
+        <h2>Elétricos, Híbridos e Condução Autônoma (2020+)</h2>
+        <p>
+          Veículos elétricos e híbridos plug-in proliferam com baterias de alta densidade e recarga ultrarrápida, reduzindo emissões de CO₂.
+        </p>
+        <p>
+          Tecnologias de condução autônoma e V2X (veículo-a-tudo) prometem mobilidade mais segura, conectada e eficiente nas cidades do futuro.
+        </p>
+      </div>
+      <div class="image">
+        <img src="tesla.jpg" alt="Carro elétrico em estação de recarga" />
+      </div>
+    </section>
+
+    <div class="btn-container">
+      <button onclick="window.location.href='index.html'">Voltar</button>
+    </div>
+
+  </div>
+</body>
+</html>

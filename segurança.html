@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Evolução da Segurança no Automobilismo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      min-height: 100%;
+    }
+    body {
+      background-color: #4B0000; /* vinho escuro */
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+    }
+    .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .category {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+    .category .text {
+      flex: 1;
+      min-width: 300px;
+      line-height: 1.6;
+    }
+    .category .text h2 {
+      margin-bottom: 0.8rem;
+      font-size: 1.8rem;
+      text-shadow: 1px 1px 3px #ffffff;
+    }
+    .category .text p {
+      margin-bottom: 1rem;
+    }
+    .category .image {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .category .image img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      filter: drop-shadow(0 0 10px #ffffff);
+      border-radius: 4px;
+    }
+    .btn-container {
+      margin-top: 2rem;
+      text-align: left;
+    }
+    .btn-container button {
+      padding: 0.6rem 1.2rem;
+      background: transparent;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-container button:hover {
+      background: #ffffff;
+      color: #4B0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <section class="category">
+      <div class="text">
+        <h2>Primeiras Décadas (Início do Séc. XX – 1960)</h2>
+        <p>
+          Os primeiros carros de corrida não tinham quase nenhum dispositivo de proteção. Volantes de madeira, chassis frágeis e freios rudimentares provocavam acidentes graves. A introdução dos primeiros capacetes, ainda simples e sem visores, representou o início da conscientização sobre a importância de proteger a cabeça do piloto. Cintos de dois pontos eram raros e pouco eficazes.
+        </p>
+      </div>
+      <div class="image">
+        <img src="capacete.jpg" alt="Capacete e carro antigo" />
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="text">
+        <h2>Décadas de 1960 e 1970</h2>
+        <p>
+          Após tragédias envolvendo grandes nomes, os cintos de três pontos — inventados por Nils Bohlin em 1959 — foram adotados. As carrocerias passaram a ter zonas de deformação programadas para dissipar energia em impactos. Capacetes ganharam visores resistentes e materiais mais fortes, reduzindo lesões faciais e cranianas.
+        </p>
+      </div>
+      <div class="image">
+        <img src="70.jpg" alt="Cinto de segurança e carro dos anos 70" />
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="text">
+        <h2>Décadas de 1980 e 1990</h2>
+        <p>
+          O dispositivo HANS (Head and Neck Support) foi desenvolvido para impedir lesões de pescoço. Cockpits começaram a usar ligas e compósitos mais resistentes, aumentando a rigidez em caso de capotagem. Airbags laterais e extintores de incêndio internos tornaram-se obrigatórios, elevando o padrão de segurança das categorias de ponta.
+        </p>
+      </div>
+      <div class="image">
+        <img src="hans.jpg" alt="Piloto com HANS no cockpit" />
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="text">
+        <h2>Século XXI</h2>
+        <p>
+          ABS e controle de tração passaram a ser permitidos em determinadas categorias, melhorando a estabilidade. Monocoques em fibra de carbono oferecem proteção estrutural superior. Sistemas eletrônicos de estabilidade e telemetria em tempo real permitem intervenções preventivas antes que pequenos problemas se tornem acidentes.
+        </p>
+      </div>
+      <div class="image">
+        <img src="mono.jpg" alt="Monocoque de fibra de carbono" />
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="text">
+        <h2>Atualmente</h2>
+        <p>
+          Sensores avançados monitoram fadiga do piloto e condições do veículo. Assistência ao condutor por IA e simulações computacionais de alto nível aceleram o desenvolvimento de estruturas mais seguras. A busca por segurança máxima continua com novos materiais e dispositivos de proteção ativa e passiva.
+        </p>
+      </div>
+      <div class="image">
+        <img src="sensor.png" alt="Sensor embarcado em carro de corrida" />
+      </div>
+    </section>
+
+    <div class="btn-container">
+      <button onclick="window.location.href='index.html'">Voltar</button>
+    </div>
+
+  </div>
+</body>
+</html>

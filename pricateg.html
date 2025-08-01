@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Automobilismo Mundial Detalhado</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      background-color: #4B0000; /* vinho escuro */
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      padding: 2rem;
+    }
+
+    .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .category {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .category .text {
+      flex: 1;
+      min-width: 300px;
+      line-height: 1.6;
+    }
+
+    .category .text h2 {
+      margin-bottom: 0.8rem;
+      font-size: 1.8rem;
+      text-shadow: 1px 1px 3px #ffffff;
+    }
+
+    .category .text p {
+      margin-bottom: 1rem;
+    }
+
+    .category .image {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .category .image img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      filter: drop-shadow(0 0 10px #ffffff);
+      border-radius: 4px;
+      border-radius: 10px;
+    }
+
+    .btn-container {
+      text-align: left;
+    }
+
+    .btn-container button {
+      margin-top: 2rem;
+      padding: 0.6rem 1.2rem;
+      background: transparent;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .btn-container button:hover {
+      background: #ffffff;
+      color: #4B0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <section class="category">
+      <div class="text">
+        <h2>Fórmula 1</h2>
+        <p>
+          Criada em 1950, a Fórmula 1 é a categoria-rei do esporte a motor. Conta com 10 equipes oficiais,
+          cada uma investindo dezenas de milhões de euros em desenvolvimento aerodinâmico, power-units híbridos
+          e simulações de túnel de vento.
+        </p>
+        <p>
+          O calendário inclui circuitos clássicos como Mônaco, Monza e Spa-Francorchamps, e etapas urbanas
+          em Singapura e Jeddah. As corridas duram cerca de 1h30, com médias de velocidade acima de 200 km/h,
+          usando sistemas DRS e ERS para estratégia e recuperação de energia.
+        </p>
+      </div>
+      <div class="image">
+        <img src="f1.png" alt="Carro de Fórmula 1" />
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="text">
+        <h2>Fórmula 2</h2>
+        <p>
+          Desde 2017, a F2 é a porta de entrada para a F1. Os carros usam chassi Dallara F2 2018,
+          motor V6 de 3.4 L e câmbio automático de seis marchas, com 22 pilotos disputando 14 etapas
+          no mesmo fim de semana da F1.
+        </p>
+        <p>
+          Além da corrida principal, há corridas sprint que testam estratégias de pit-stop e gerenciamento
+          de pneus Pirelli. Ex-campeões como Charles Leclerc e George Russell subiram rapidamente
+          para a Fórmula 1 após brilharem na F2.
+        </p>
+      </div>
+      <div class="image">
+        <img src="f2.png" alt="Carro de Fórmula 2" />
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="text">
+        <h2>Stock Car Brasil</h2>
+        <p>
+          Em atividade desde 1979, a Stock Car é a principal categoria de turismo do Brasil.
+          Seus carros têm chassi tubular e carroceria semelhante a modelos de rua, movidos por
+          motores V8 5.7 L com cerca de 550 cv.
+        </p>
+        <p>
+          O calendário inclui 12 etapas em autódromos como Interlagos e Curitiba. As provas misturam
+          corridas de resistência e sprint, com nomes como Cacá Bueno e Ricardo Zonta duelando
+          em pistas de alta velocidade e curvas técnicas.
+        </p>
+      </div>
+      <div class="image">
+        <img src="stock.jpg" alt="Stock Car Brasil" />
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="text">
+        <h2>500 Milhas de Indianápolis (Indy 500)</h2>
+        <p>
+          Realizada desde 1911 no oval de 2,5 milhas, a Indy 500 exige estratégia de combustível
+          e trocas de pneus Firestone. Monopostos turbo de 2.2 L entregam até 700 cv,
+          atingindo médias acima de 380 km/h.
+        </p>
+        <p>
+          Ícones como A.J. Foyt, Rick Mears e Helio Castroneves conquistaram múltiplos títulos,
+          transformando a prova em marco do automobilismo mundial.
+        </p>
+      </div>
+      <div class="image">
+        <img src="indy.jpeg" alt="500 Milhas de Indianápolis" />
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="text">
+        <h2>Kart</h2>
+        <p>
+          Considerado o berço de grandes pilotos, o kart usa motores 2T ou 4T de 100 a 125 cc
+          e chassis ajustáveis de marcas como Birel ART e Tony Kart. As categorias vão do regional
+          ao mundial CIK-FIA.
+        </p>
+        <p>
+          Ayrton Senna e Lewis Hamilton começaram no kart, aprendendo trajetória, ultrapassagem
+          e leitura de piso. É o passo fundamental para quem sonha chegar às categorias maiores.
+        </p>
+      </div>
+      <div class="image">
+        <img src="kart.png" alt="Piloto de Kart" />
+      </div>
+    </section>
+
+    <div class="btn-container">
+      <button onclick="window.location.href='index.html'">Voltar</button>
+    </div>
+  </div>
+</body>
+</html>

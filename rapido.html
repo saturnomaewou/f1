@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carro Mais Rápido</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      background-color: #20292f; /* cor chumbo */
+      font-family: Arial, sans-serif;
+    }
+    strong {
+      color: #ffffff; /* cor branca para o texto em negrito */
+      font-size: 20px;
+    }
+    img{
+        box-shadow: #ffffff 0px 0px 20px 5px; /* sombra branca ao redor da imagem */
+        border-radius: 15px;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .left, .right {
+      flex: 1;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .left img {
+      max-width: 80%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+      color: #ffffff;
+      text-align: right;
+    }
+
+    .right h1 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .right p {
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .right button {
+      align-self: flex-end;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background: transparent;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .right button:hover {
+      background: #ffffff;
+      color: #36454F;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <img src="koenigsegg.png" alt="Koenigsegg Jesko Absolut" />
+    </div>
+    <div class="right">
+      
+      <p>
+        <h1>Koenigsegg Jesko Absolut: O Carro Mais Rápido do Mundo?<br/><br/></h1>
+        O Koenigsegg Jesko Absolut é frequentemente citado como o carro mais rápido do mundo,
+        com uma velocidade máxima reivindicada de 531 km/h. Essa velocidade, no entanto,
+        é baseada em simulações e ainda não foi oficialmente verificada em um teste independente.<br/><br/>
+        <strong>Especificações e Características:</strong><br/>
+        • Velocidade Máxima: 531 km/h (reivindicada)<br/>
+        • Motor: V8 biturbo de 5,0 litros, gerando 1.600 cv.<br/>
+        • Peso: 1.320 kg.<br/>
+        • Preço: Aproximadamente 3 milhões de euros (cerca de R$ 18 milhões).<br/>
+        • Carroceria: Fibra de carbono leve.<br/><br/>
+        <strong>Desempenho em Testes:</strong><br/>
+        O Jesko Absolut também estabeleceu um recorde de aceleração de 0 a 400 km/h e retorno a 0 km/h em 27,83 segundos.
+        Este feito superou o recorde anterior de outro modelo Koenigsegg, o Regera.<br/><br/>
+        <strong>Considerações Finais:</strong><br/>
+        Embora a Koenigsegg afirme que o Jesko Absolut é o carro mais rápido do mundo, é importante notar que essa afirmação
+        se baseia em simulações. Um teste oficial e verificado por uma entidade independente é necessário para confirmar
+        definitivamente este título. Até que isso ocorra, a posição do Jesko Absolut como o carro de produção mais rápido
+        do mundo permanece uma reivindicação.
+      </p>
+      <button onclick="window.location.href='index.html'">Voltar</button>
+    </div>
+  </div>
+</body>
+</html>
