@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,6 +40,20 @@
             border-radius: 15px;
             cursor: pointer;
         }
+        /* botão pequeno discreto caso o navegador bloqueie autoplay */
+        #audio-control {
+          position: fixed;
+          right: 16px;
+          bottom: 16px;
+          background: rgba(84,0,163,0.95);
+          color: #fff;
+          border: none;
+          padding: 8px 12px;
+          border-radius: 12px;
+          cursor: pointer;
+          display: none;
+          z-index: 9999;
+        }
     </style>
 </head>
 <body>
@@ -47,13 +61,70 @@
         <h1>Curiosidades Automobilisticas</h1>
         <p>Você sabia que o primeiro carro foi inventado em 1886 por Karl Benz? Ele era movido a gasolina e tinha apenas três rodas.</p>
         <p>Outro fato interessante é que o carro mais vendido do mundo é o Toyota Corolla, com mais de 44 milhões de unidades vendidas desde seu lançamento em 1966.</p>
-        
     </div>
+
     <button onclick="window.location.href='pricateg.html'">Principais Categorias</button>
     <button onclick="window.location.href='rapido.html'">Carro mais Rápido</button>
     <button onclick="window.location.href='segurança.html'">Segurança</button>
     <button onclick="window.location.href='motor.html'">Motores</button>
     <button onclick="window.location.href='tecno.html'">Tecnologia</button>
     <button onclick="window.location.href='circuitos.html'">Pistas</button>
+
+    <!-- Áudio: mantive sua estrutura original, adicionei muted para permitir autoplay silencioso -->
+    <audio id="f1-audio" src="f1.mp3" preload="auto" autoplay loop muted playsinline></audio>
+
+    <!-- Botão discreto para ativar/desativar som se o navegador bloquear desmutar por script -->
+    <button id="audio-control">Ativar Som</button>
+
+    <script>
+        const audio = document.getElementById('f1-audio');
+        const control = document.getElementById('audio-control');
+
+        // Ajuste de volume inicial
+        audio.volume = 0.8;
+
+        // Tenta tocar (autoplay mudo ajuda a evitar bloqueio)
+        audio.play().catch(()=>{});
+
+        // Função para desmutar e tocar; retorna true se conseguiu
+        async function enableSound() {
+          try {
+            audio.muted = false;
+            await audio.play();
+            control.textContent = 'Pausar Som';
+            control.style.display = 'inline-block';
+            return true;
+          } catch (e) {
+            control.style.display = 'inline-block';
+            return false;
+          }
+        }
+
+        // Se o navegador permitir um gesto do usuário em qualquer parte da página, usamos para desmutar
+        function onFirstUserGesture() {
+          document.removeEventListener('click', onFirstUserGesture);
+          document.removeEventListener('keydown', onFirstUserGesture);
+          enableSound();
+        }
+        document.addEventListener('click', onFirstUserGesture);
+        document.addEventListener('keydown', onFirstUserGesture);
+
+        // Controle manual visível para o usuário ativar/desativar som
+        control.addEventListener('click', async () => {
+          if (audio.paused) {
+            audio.muted = false;
+            try { await audio.play(); control.textContent = 'Pausar Som'; }
+            catch { /* se falhar, manter botão para nova tentativa */ }
+          } else {
+            audio.pause();
+            control.textContent = 'Ativar Som';
+          }
+        });
+
+        // Se o autoplay silencioso não estiver tocando, mostra o botão para ativar
+        setTimeout(() => {
+          if (audio.paused) control.style.display = 'inline-block';
+        }, 500);
+    </script>
 </body>
 </html>
